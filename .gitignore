@@ -1,0 +1,21 @@
+# Archivos de configuración de Visual Studio
+.vs/
+*.suo
+*.VC.db
+*.opendb
+
+# Archivos de compilación
+*.obj
+*.exe
+*.ilk
+*.pdb
+*.ipch
+*.tlog
+*.vcxproj.user
+*.cache
+*.log
+
+# Carpetas de compilación
+x64/
+Debug/
+Release/
