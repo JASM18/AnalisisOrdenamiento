@@ -11,8 +11,6 @@
 #include "Algoritmos.hpp"
 using namespace std::chrono;
 
-static int iter = 1;
-
 using std::endl;
 using std::map;
 using std::vector;
@@ -41,13 +39,13 @@ void plantilla(std::ofstream* archivo, std::string* texto, void (*funcionExtra)(
         archivo[i] << "Casos" << ",";
 
         for (int hola = 10; hola <= 1000; hola += 10) {
-            archivo[i] << "Tamaño " << hola;
+            archivo[i] << "Tamaï¿½o " << hola;
             if (hola < 1000) archivo[i] << ",";
         }
         archivo[i] << endl;
     }
 
-    map<int, vector<long double>> tiempos; // Mapa para almacenar los tiempos de cada tamaño
+    map<int, vector<long double>> tiempos; // Mapa para almacenar los tiempos de cada tamaï¿½o
     cout << "Procesando..." << endl << endl;
 
     for (int m = 0, L = 0; m < 10; m++) {
@@ -61,7 +59,7 @@ void plantilla(std::ofstream* archivo, std::string* texto, void (*funcionExtra)(
                 si[d] = aleatorio(1, 1000);
             }
 
-            for (int p = MIN_TAMANO; p <= MAX_TAMANO; p += INCREMENTO) { //Bucle tamaño por fila
+            for (int p = MIN_TAMANO; p <= MAX_TAMANO; p += INCREMENTO) { //Bucle tamaï¿½o por fila
                 for (int n = 0; n < 8; n++) {
                     switch (n) {
                     case 0:
